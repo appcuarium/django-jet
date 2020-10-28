@@ -296,10 +296,11 @@ Dashboard.prototype = {
         $inline.find('.add-row a').on('click', function(e) {
             e.preventDefault();
 
-            var $empty = $inline.find('.inline-related.empty-form');
+            var $empty = $inline.find('.inline-empty.empty-form');
             var $clone = $empty
                 .clone(true)
                 .removeClass('empty-form')
+                .addClass('inline-related')
                 .insertBefore($empty);
 
             self.updateModuleChildrenFormsetLabels($inline);

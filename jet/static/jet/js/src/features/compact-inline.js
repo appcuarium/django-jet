@@ -121,11 +121,12 @@ CompactInline.prototype = {
         $inline.find('.add-row a').on('click', function (e) {
             e.preventDefault();
 
-            var $empty = $inline.find('.inline-related.empty-form');
-            var cloneIndex = parseInt($inline.find('.inline-related').length) - 1;
+            var $empty = $inline.find('.inline-empty.empty-form');
+            var cloneIndex = parseInt($inline.find('.inline-related').length);
             var $clone = $empty
                 .clone(true)
                 .removeClass('empty-form')
+                .addClass('inline-related')
                 .insertBefore($empty);
 
             self.updateTotalForms($inline);
