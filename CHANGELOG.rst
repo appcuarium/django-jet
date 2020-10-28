@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.9
+-----
+* Fixed inlines js issues
+
 1.0.8
 -----
 * PR-345: Django 2.1 compatability fix
